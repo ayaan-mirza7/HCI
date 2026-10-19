@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio of Ayaan Mirza, Computer Engineering student at VJTI building full-stack and ML applications.">
+<title>Ayaan Mirza | Computer Engineering Portfolio</title>
+<style>
+:root{--bg:#f6f7fb;--surface:#fff;--text:#12182b;--muted:#5a6480;--accent:#4f46e5;--accent2:#0891b2;--border:#e1e5f0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1020;--surface:#131a30;--text:#e8ecf8;--muted:#9aa5c4;--accent:#818cf8;--accent2:#22d3ee;--border:#232c4a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1020;--surface:#131a30;--text:#e8ecf8;--muted:#9aa5c4;--accent:#818cf8;--accent2:#22d3ee;--border:#232c4a;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent2);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;z-index:50}
+.skip:focus{left:8px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+nav{max-width:1080px;margin:auto;display:flex;align-items:center;gap:6px;padding:10px 20px;flex-wrap:wrap}
+.logo{font-weight:800;text-decoration:none;color:var(--text);margin-right:auto;font-size:1.1rem}
+nav a.l{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:.92rem}
+nav a.l:hover,nav a.l.on{color:var(--text);background:var(--surface)}
+#theme{background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:.9rem}
+main{max-width:1080px;margin:auto;padding:0 20px}
+section{padding:64px 0 8px}
+h1{font-size:clamp(2.4rem,7vw,4rem);line-height:1.1;margin:.2em 0}
+h2{font-size:1.7rem;margin:0 0 24px;display:flex;align-items:center;gap:12px}
+h2::after{content:"";flex:1;height:1px;background:var(--border)}
+.hero{padding-top:72px}
+.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{color:var(--accent2);font-weight:600;letter-spacing:.04em}
+.lead{color:var(--muted);max-width:640px;font-size:1.1rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--accent);color:var(--accent)}
+.btn.p{background:var(--accent);color:#fff}
+.btn:hover{transform:translateY(-2px)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:40px}
+.stat,.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px}
+.stat b{display:block;font-size:1.7rem;color:var(--accent)}
+.stat span{color:var(--muted);font-size:.88rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.card{transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card h3{margin:0 0 2px;font-size:1.1rem}
+.meta{color:var(--muted);font-size:.88rem;margin:0 0 10px}
+ul{padding-left:20px;margin:8px 0 0}
+li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.chip{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);padding:3px 10px;border-radius:99px;font-size:.8rem;font-weight:600}
+.tl{border-left:2px solid var(--border);padding-left:22px;display:grid;gap:18px}
+.tl .card{position:relative}
+.tl .card::before{content:"";position:absolute;left:-30px;top:24px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.skills .card h3{font-size:.95rem;color:var(--accent2);margin-bottom:8px}
+form{display:grid;gap:14px;max-width:560px}
+label{font-weight:600;font-size:.92rem}
+input,textarea{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);font:inherit}
+footer{text-align:center;color:var(--muted);padding:48px 20px;font-size:.9rem}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<nav aria-label="Primary">
+<a class="logo" href="#home">Ayaan<span class="grad">.</span>dev</a>
+<a class="l" href="#about">About</a><a class="l" href="#experience">Experience</a><a class="l" href="#projects">Projects</a><a class="l" href="#skills">Skills</a><a class="l" href="#achievements">Achievements</a><a class="l" href="#contact">Contact</a>
+<button id="theme" type="button" aria-label="Toggle light and dark theme">◐ Theme</button>
+</nav>
+</header>
+<main id="main">
+<section id="home" class="hero">
+<p class="tag">HELLO, I’M</p>
+<h1><span class="grad">Ayaan Mirza</span></h1>
+<p class="lead">Computer Engineering student at VJTI Mumbai with a minor in Cybersecurity. I build full-stack web apps and machine learning tools that are secure, fast and easy to use.</p>
+<div class="btns">
+<a class="btn p" href="#projects">View Projects</a>
+<a class="btn" href="#contact">Get in Touch</a>
+<a class="btn" href="https://github.com/ayaan-mirza7" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://linkedin.com/ayaan-mirza" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+<div class="stats">
+<div class="stat"><b>7.81</b><span>CGPA at VJTI</span></div>
+<div class="stat"><b>350+</b><span>DSA problems solved</span></div>
+<div class="stat"><b>1577</b><span>LeetCode peak rating</span></div>
+<div class="stat"><b>99.73</b><span>MHT-CET percentile</span></div>
+</div>
+</section>
+
+<section id="about" class="reveal">
+<h2>About &amp; Education</h2>
+<div class="grid">
+<div class="card"><h3>Veermata Jijabai Technological Institute (VJTI)</h3><p class="meta">Mumbai · Aug 2024 – Present</p><p>B.Tech in Computer Engineering with a minor in Cybersecurity. CGPA 7.81/10.</p></div>
+<div class="card"><h3>Matoshree Junior College</h3><p class="meta">Nashik · June 2022 – June 2024</p><p>HSC 86.33%. MHT-CET 99.73 percentile (Rank 634) and JEE Main 99.03 percentile.</p></div>
+<div class="card"><h3>Relevant Coursework</h3><div class="chips"><span class="chip">Data Structures</span><span class="chip">Algorithms</span><span class="chip">OOP</span><span class="chip">DBMS</span><span class="chip">Operating Systems</span><span class="chip">Artificial Intelligence</span></div></div>
+</div>
+</section>
+
+<section id="experience" class="reveal">
+<h2>Experience</h2>
+<div class="tl">
+<div class="card"><h3>Project Mentor</h3><p class="meta">Agastya Foundation (CSR initiative by JP Morgan) · Mumbai · Sept 2025 – Mar 2026</p>
+<ul><li>Directed interdisciplinary groups of 5–7 members in wireframing and sprint planning, delivering MVPs on time for three client simulations.</li><li>Coached 5 project cohorts through requirements research and interface prototyping, cutting later development iterations by 20%.</li></ul></div>
+<div class="card"><h3>Open Source Contributor</h3><p class="meta">Accord project · Remote · Dec 2025 – Feb 2026</p>
+<ul><li>Resolved active framework bugs and modified core repository build architectures.</li><li>Engineered and verified 3 production-ready feature changes through multi-stage maintainer code reviews, reducing critical bugs by 30%.</li></ul></div>
+<div class="card"><h3>Hackathon Finalist</h3><p class="meta">Mumbai Hacks · Mumbai · Sept 2025 – Nov 2025</p>
+<ul><li>Reached the final round of Mumbai Hacks within a strict 24-hour window.</li><li>Built validation checks that improved system integrity, reaching 99% accuracy in data submissions for teams handling sensitive information.</li></ul></div>
+</div>
+</section>
+
+<section id="projects" class="reveal">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card"><h3>Skill-Exchange</h3><p class="meta">Dec 2025 – Feb 2026</p>
+<div class="chips"><span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MongoDB</span><span class="chip">JWT</span><span class="chip">Multer</span></div>
+<ul><li>MERN platform with a credit-based system that cut learner expenses by 25%.</li><li>JWT authentication with route guards and server-side validation, reducing vulnerabilities by 25%.</li><li>Transaction manager using MongoDB atomic $inc operators, removing race conditions for 1000+ users.</li></ul></div>
+<div class="card"><h3>Fyntra</h3><p class="meta">Sept 2025 – Nov 2025</p>
+<div class="chips"><span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MongoDB</span></div>
+<ul><li>Responsive finance manager for income, expenses, budgets and savings.</li><li>Interactive data visualizations for real-time financial insights.</li><li>Secure transaction management and analytics.</li></ul></div>
+<div class="card"><h3>EduPredict</h3><p class="meta">June 2026 – Sept 2026</p>
+<div class="chips"><span class="chip">React.js</span><span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">ML</span><span class="chip">JWT</span><span class="chip">bcrypt</span></div>
+<ul><li>Full-stack ML app predicting student academic performance with Linear Regression, Decision Tree, Random Forest and SVR.</li><li>React frontend with a Node/Express backend and secure JWT + bcrypt authentication.</li></ul></div>
+</div>
+<p class="meta" style="margin-top:14px">Source code for these projects is on <a href="https://github.com/ayaan-mirza7" target="_blank" rel="noopener">GitHub</a>.</p>
+</section>
+
+<section id="skills" class="reveal skills">
+<h2>Technical Skills</h2>
+<div class="grid">
+<div class="card"><h3>Languages</h3><div class="chips"><span class="chip">C++</span><span class="chip">Python</span><span class="chip">Java (basics)</span><span class="chip">JavaScript</span></div></div>
+<div class="card"><h3>Web &amp; Frameworks</h3><div class="chips"><span class="chip">HTML</span><span class="chip">Tailwind CSS</span><span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Express.js</span></div></div>
+<div class="card"><h3>Databases</h3><div class="chips"><span class="chip">MongoDB</span><span class="chip">MySQL</span><span class="chip">Mongoose</span></div></div>
+<div class="card"><h3>ML Libraries</h3><div class="chips"><span class="chip">PyTorch</span><span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span><span class="chip">Scikit-learn</span><span class="chip">Seaborn</span><span class="chip">spaCy</span></div></div>
+<div class="card"><h3>Tools</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span><span class="chip">Jupyter</span><span class="chip">Linux</span></div></div>
+</div>
+</section>
+
+<section id="achievements" class="reveal">
+<h2>Achievements</h2>
+<div class="card"><ul>
+<li>Solved 350+ problems across LeetCode, Codeforces, GeeksforGeeks and CodeChef in data structures and algorithms.</li>
+<li><b>LeetCode:</b> peak rating 1577.</li>
+<li><b>GeeksforGeeks:</b> solved core data structures and algorithmic challenges.</li>
+</ul></div>
+</section>
+
+<section id="contact" class="reveal">
+<h2>Contact</h2>
+<p class="lead" style="margin-top:0">Open to internships and collaborations. Send a message and it opens in your email app.</p>
+<form id="cf">
+<div><label for="n">Name</label><input id="n" required autocomplete="name"></div>
+<div><label for="e">Your email</label><input id="e" type="email" required autocomplete="email"></div>
+<div><label for="m">Message</label><textarea id="m" rows="5" required></textarea></div>
+<button class="btn p" type="submit">Send message</button>
+</form>
+<p class="meta" style="margin-top:18px">📞 +91 8983611665 · ✉ <a href="mailto:ayaanmirza764@gmail.com">ayaanmirza764@gmail.com</a> · Nashik / Mumbai, India</p>
+</section>
+</main>
+<footer>© 2026 Ayaan Mirza. Designed for accessibility: keyboard navigation, high contrast and reduced-motion support.</footer>
+<script>
+(function(){
+var r=document.documentElement;
+try{var s=localStorage.getItem('theme');if(s)r.setAttribute('data-theme',s)}catch(e){}
+document.getElementById('theme').addEventListener('click',function(){
+var dark=r.getAttribute('data-theme')?r.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+var t=dark?'light':'dark';r.setAttribute('data-theme',t);try{localStorage.setItem('theme',t)}catch(e){}
+});
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in')}})},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+var links=document.querySelectorAll('nav a.l');
+var so=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('main section').forEach(function(s){so.observe(s)});
+document.getElementById('cf').addEventListener('submit',function(ev){
+ev.preventDefault();
+var n=document.getElementById('n').value,e=document.getElementById('e').value,m=document.getElementById('m').value;
+location.href='mailto:ayaanmirza764@gmail.com?subject='+encodeURIComponent('Portfolio message from '+n)+'&body='+encodeURIComponent(m+'\n\n'+n+' ('+e+')');
+});
+})();
+</script>
+</body>
+</html>
